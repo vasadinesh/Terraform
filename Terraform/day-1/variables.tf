@@ -13,3 +13,9 @@ variable "region" {
     default = ""
   
 }
+
+variable "instance_count" {
+    type = number
+    default = 1
+  
+}
