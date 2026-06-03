@@ -27,8 +27,8 @@ resource "aws_lambda_function" "my_lambda" {
   timeout       = 900
   memory_size   = 128
 
-  filename         = "lambda_function.zip"  # Ensure this file exists
-  source_code_hash = filebase64sha256("lambda_function.zip")
+  filename         = "lambda_function.py.zip"  # Ensure this file exists
+  source_code_hash = filebase64sha256("lambda_function.py.zip")
 
   #Without source_code_hash, Terraform might not detect when the code in the ZIP file has changed â meaning your Lambda might not update even after uploading a new ZIP.
 
