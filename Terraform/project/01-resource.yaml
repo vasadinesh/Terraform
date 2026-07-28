@@ -1,7 +1,7 @@
-apiversion: v1
-kind: Service
+apiVersion: v1
+kind: Namespace
 Metadata:
   name: resource
-  region: us-east-1
+  region: us-west-2
   labels:
     app: resource
