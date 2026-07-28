@@ -1,0 +1,7 @@
+apiversion: v1
+kind: Service
+Metadata:
+  name: resource
+  region: us-east-1
+  labels:
+    app: resource
