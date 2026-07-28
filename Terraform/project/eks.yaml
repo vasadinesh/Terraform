@@ -1,12 +1,12 @@
-apiVersion: v1
+apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: project-eks
+  name: project
   region: us-east-1
 
 managedNodeGroups:
-  - name: project-eks-ng
-    instanceTypes: ["t3.medium", "t3.large", "t3.xlarge"]
-    desiredCapacity: 2
+  - name: project
+    instanceTypes: ["m5.large", "c3.large", "c4.large", "c5.large"]
+    desiredCapacity: 3
     spot: true
