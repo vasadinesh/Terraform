@@ -7,7 +7,7 @@ metadata:
 
 managedNodeGroups:
   - name: project
-    instanceType: m3.medium
+    instanceType: m2.medium
     # instanceTypes: ["m5.large", "c3.large", "c4.large", "c5.large"]
     desiredCapacity: 1
     spot: true
